@@ -320,6 +320,6 @@ load('../breast40.Rdata')
     print(cv_x$lambdaopt)
     print(cv_y$lambdaopt)
   }
-  lambda_fin = mean(c(lambda_x, lambda_y))
+  lambda_fin = round(mean(c(lambda_x, lambda_y)),1)
   print(paste0('The optimal lambda is, ', lambda_fin))
 }
