@@ -6,9 +6,7 @@ The folder includes scripts for parameter tuning, model estimation, and visualiz
 
 To reproduce the parameter tuning results, users should proceed as follows:
 
-1. We find that the `lambda1` tuning results for normal conditional graphical model is unstable due to random data splitting. 
-We obtain a robust tuning result by performing multiple data splits. 
-To do this, submit the script `Tuning/tuning.R` by using `submit.sh` and `cmd.cmd` on a SLURM-based computing cluster to obtain the tuning results for normal conditional graphical model.
+1. Submit the script `Tuning/tuning.R` by using `submit.sh` and `cmd.cmd` on a SLURM-based computing cluster to obtain the tuning results that are robust to random data split for `lambda1` in normal conditional graphical model.
 
 2. Run the `Tuning/NC_TunningSummary.R` script to obtain the final tuning results for `lambda1` and `lambda2` under normal conditional graphical model.
 
